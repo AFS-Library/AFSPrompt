@@ -7,7 +7,10 @@ For the Python implementation of AFS theory, please refer to: [AFS](https://gith
 
 
 
-# The import statement from AFS_rerank_system.AFScore.ClusterExamples import afsSimilarity has the same execution effect as lines 32-66 in the link(https://github.com/AFS-Library/PyAFS/blob/main/ClusterToyExample.py), except that it's encapsulated into a function.
+1.The import statement from AFS_rerank_system.AFScore.ClusterExamples import afsSimilarity has the same execution effect as lines 32-66 in the link(https://github.com/AFS-Library/PyAFS/blob/main/ClusterToyExample.py), except that it's encapsulated into a function.
+
+Like:
+```
 def afsSimilarity(data, x, epsilon=0.3):
     simpleConceptSet = Text_to_simpleConcept(x)
     conceptM = {}
@@ -22,5 +25,5 @@ def afsSimilarity(data, x, epsilon=0.3):
     similarity_list = build_similarity_matrix_op(ei, mf, str, sample_description_cluster)
 
     return similarity_list
-
-# from AFS_rerank_system.AFScore.util import rerank is a misnomer, as it actually corresponds to an implementation of a DFS algorithm.
+```
+2. from AFS_rerank_system.AFScore.util import rerank is a misnomer, as it actually corresponds to an implementation of a DFS algorithm.
