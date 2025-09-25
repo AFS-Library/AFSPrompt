@@ -31,6 +31,12 @@ pip install -r requirements.txt
 ```
 ## Usage
 
+### For Demo
+```
+python db_init.py
+python app.py
+```
+
 ### Dataset
 This framework can be applied to some VQA datasets, such as OK-VQA, A-OKVQA, TextVQA, and FVQA.
 In addition, in our framework, the training set is used as a candidate set of demonstration examples.
