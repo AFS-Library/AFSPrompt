@@ -26,4 +26,4 @@ def afsSimilarity(data, x, epsilon=0.3):
 
     return similarity_list
 ```
-2. from AFS_rerank_system.AFScore.util import rerank is a misnomer, as it actually corresponds to an implementation of a DFS algorithm.
+2. from AFS_rerank_system.AFScore.util import rerank corresponds to an implementation of a Depth-First Search (DFS) algorithm for graphs.
