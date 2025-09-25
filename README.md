@@ -57,6 +57,7 @@ The features used in this framework are question (Q), Caption (C), optional feat
 
 ### AFS rerank system
 The `AFS rerank system` directory contains module for reranking and scoring.
+You can use it as demonstrated in the link(https://github.com/AFS-Library/AFSPrompt/blob/main/AFSPrompt-demo-web/app_server.py).
 
 ### AFS Prompting
 This module implements the AFS prompting system and supports various small large language models (such as Mistral, Llama, Gemma) as knowledge engines.  
