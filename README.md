@@ -54,6 +54,9 @@ The `AFS rerank system` directory contains module for reranking and scoring.
 
 ### AFS Prompting
 This module implements the AFS prompting system and supports various small large language models (such as Mistral, Llama, Gemma) as knowledge engines.  
+```
+python main.py
+```
 For related implementations, see: [Prophet](https://github.com/MILVLG/prophet)
 
 ## Acknowledgements
