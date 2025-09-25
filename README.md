@@ -34,13 +34,14 @@ pip install -r requirements.txt
 ### Dataset
 This framework can be applied to some VQA datasets, such as OK-VQA, A-OKVQA, TextVQA, and FVQA.
 In addition, in our framework, the training set is used as a candidate set of demonstration examples.
+Prior to feature processing, all data processing aligns with that of this work (https://github.com/MILVLG/prophet)
 
 ### Examples Filter
 This module provides scripts and configurations for handling candidate examples using `CLIP` or `MCAN` models.  
 For related implementations, see: [PICa](https://github.com/microsoft/PICa) [Prophet](https://github.com/MILVLG/prophet)
 
 ### Feature processing
-The features used in this framework are question (Q), Caption (C), optional feature tag (T), pre-answer (A) and knowledge (K).
+The features used in this framework are question (Q), Caption (C), optional feature tag (T), pre-answer (A) and knowledge (K).Each script can be run directly using `Python  filename.py`.
 - **Question(Q)**: Q from the original Q&A pair.
 - **Caption(C)**: C from image related to the original Q&A pair by [`PromptCap`](https://huggingface.co/tifa-benchmark/promptcap-coco-vqa)/[`OFA`](https://github.com/OFA-Sys/OFA).
 - Optional feature:
