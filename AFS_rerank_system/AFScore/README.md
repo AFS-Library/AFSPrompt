@@ -22,9 +22,9 @@ def afsSimilarity(data, x, epsilon=0.3):
     for i in range(0, len(str.data)):
         sample_description_cluster.append(sampleDescrib_cluster(ei, mf, str, i, epsilon=epsilon))
 
-    similarity_list = build_similarity_matrix_op(ei, mf, str, sample_description_cluster)
+    similarity_matrix = build_similarity_matrix(ei, mf, str, sample_description_cluster)
 
-    return similarity_list
+    return similarity_matrix
 ```
 2. from AFS_rerank_system.AFScore.util import rerank corresponds to an implementation of a Depth-First Search (DFS) algorithm for graph。
 
